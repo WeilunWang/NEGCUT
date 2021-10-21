@@ -14,7 +14,7 @@ if [[ $FILE == "cityscapes" ]]; then
 fi
 
 echo "Specified [$FILE]"
-URL=None
+URL=https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/$FILE.zip
 ZIP_FILE=./datasets/$FILE.zip
 TARGET_DIR=./datasets/$FILE/
 wget --no-check-certificate -N $URL -O $ZIP_FILE

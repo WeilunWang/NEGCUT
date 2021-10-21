@@ -84,7 +84,7 @@ if __name__ == '__main__':
 
     print('Preparing Cityscapes Dataset for val phase')
     process_cityscapes(opt.gtFine_dir, opt.leftImg8bit_dir, opt.output_dir, "val")
-    # print('Preparing Cityscapes Dataset for train phase')
-    # process_cityscapes(opt.gtFine_dir, opt.leftImg8bit_dir, opt.output_dir, "train")
+    print('Preparing Cityscapes Dataset for train phase')
+    process_cityscapes(opt.gtFine_dir, opt.leftImg8bit_dir, opt.output_dir, "train")
 
     print('Done')
