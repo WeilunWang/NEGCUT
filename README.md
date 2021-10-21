@@ -10,7 +10,7 @@
 We provide our PyTorch implementation of Instance-wise Hard Negative Example Generation for Contrastive Learning in Unpaired Image-to-Image Translation (NEGCUT). 
 In the paper, we identify that the negative examples play a critical role in the performance of contrastive learning for image-to-image translation.
 We train a generator to generate negative examples online through adversarial learning to enhance the performance of contrastive learning in unpaired image-to-image translation.
-Compared to [CUT](https://github.com/taesungp/contrastive-unpaired-translation), our model achieves superior performances on three benchmark datasets with the same inference speed.
+Compared to CUT, our model achieves superior performances on three benchmark datasets with the same inference speed.
 
 
 ## Example Results
