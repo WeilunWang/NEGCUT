@@ -3,6 +3,12 @@ from .cut_model import CUTModel
 
 
 class SinCUTModel(CUTModel):
+    """ This class implements the single image translation model (Fig 9) of
+    Contrastive Learning for Unpaired Image-to-Image Translation
+    Taesung Park, Alexei A. Efros, Richard Zhang, Jun-Yan Zhu
+    ECCV, 2020
+    """
+
     @staticmethod
     def modify_commandline_options(parser, is_train=True):
         parser = CUTModel.modify_commandline_options(parser, is_train)
