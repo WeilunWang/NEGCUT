@@ -97,5 +97,5 @@ To evaluate your generated images, you need to arrange your generated results li
 ### Datasets
 Refer [Datasets](./docs/datasets.md) to learn more details about datasets used and how to create your own datasets 
 
-### Acknowledge
+## Acknowledge
 Our code is developed based on [CUT](https://github.com/taesungp/contrastive-unpaired-translation). We also thank [pytorch-fid](https://github.com/mseitzer/pytorch-fid) for FID computation, [drn](https://github.com/fyu/drn) for mIoU computation.
