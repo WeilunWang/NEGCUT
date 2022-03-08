@@ -7,7 +7,7 @@
 <br><br><br>
 
 
-We provide our PyTorch implementation of Instance-wise Hard Negative Example Generation for Contrastive Learning in Unpaired Image-to-Image Translation (NEGCUT) [[paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Instance-Wise_Hard_Negative_Example_Generation_for_Contrastive_Learning_in_Unpaired_ICCV_2021_paper.pdf). 
+We provide our PyTorch implementation of [Instance-wise Hard Negative Example Generation for Contrastive Learning in Unpaired Image-to-Image Translation](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Instance-Wise_Hard_Negative_Example_Generation_for_Contrastive_Learning_in_Unpaired_ICCV_2021_paper.pdf) (NEGCUT). 
 In the paper, we identify that the negative examples play a critical role in the performance of contrastive learning for image-to-image translation.
 We train a generator to generate negative examples online through adversarial learning to enhance the performance of contrastive learning in unpaired image-to-image translation.
 Compared to CUT, our model achieves superior performances on three benchmark datasets with the same inference speed.
@@ -76,7 +76,7 @@ The test results will be saved to a html file here: `./results/cityscapes/latest
 
 ### Apply a pre-trained NEGCUT model and evaluate
 
-The pretrained models can be downloaded at [checkpoints](https://drive.google.com/drive/folders/1IzD6qZrRHBY7tpFDbB3QoBAIHqsuTUVh?usp=sharing).
+The pretrained models can be downloaded at [[checkpoints]](https://drive.google.com/drive/folders/1IzD6qZrRHBY7tpFDbB3QoBAIHqsuTUVh?usp=sharing).
 
 - To evaluate the model, first generate the test results:
 ```bash
@@ -88,7 +88,7 @@ python test.py --dataroot ./datasets --name MODEL_NAME --NEGCUT_mode NEGCUT --mo
 python fid_score.py GENERATED_IMAGES_DIR REAL_IMAGE_DIR
 ```
 
-- To calcuate mAP, PixAcc and ClsAcc metrics, you should clone [drn](https://github.com/fyu/drn) and apply the pre-trained drn-d-22 model at `assets/drn/drn_d_22.pth.tar` for the resolution of 128x256 [checkpoints](https://drive.google.com/drive/folders/1IzD6qZrRHBY7tpFDbB3QoBAIHqsuTUVh?usp=sharing):
+- To calcuate mAP, PixAcc and ClsAcc metrics, you should clone [drn](https://github.com/fyu/drn) and apply the pre-trained drn-d-22 model at `assets/drn/drn_d_22.pth.tar` for the resolution of 128x256 [[checkpoints]](https://drive.google.com/drive/folders/1IzD6qZrRHBY7tpFDbB3QoBAIHqsuTUVh?usp=sharing):
 ```bash
 python segment.py test -d <data_folder> -c 19 --arch drn_d_22 --batch-size 1 --resume assets/drn/drn_d_22.pth.tar --phase val --with-gt
 ```
